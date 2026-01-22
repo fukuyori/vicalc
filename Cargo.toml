@@ -1,0 +1,23 @@
+[package]
+name = "vicalc"
+version = "0.1.0"
+edition = "2021"
+description = """
+Vicalc is a structure-oriented spreadsheet editor inspired by VisiCalc and Vim.
+Instead of mouse-driven selection and modal dialogs, Vicalc lets you edit tables
+by explicitly operating on rows, columns, and cells. Editing direction (row or
+column) is a first-class concept, not an afterthought. Vicalc is not an Excel
+clone. It is a rethinking of spreadsheet interaction for people who care about
+structure, precision, and repeatability.
+"""
+authors = [""]
+license = "MIT"
+keywords = ["spreadsheet", "vim", "terminal", "tui", "editor"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+crossterm = "0.27"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+unicode-width = "0.1"
+arboard = "3.2"
